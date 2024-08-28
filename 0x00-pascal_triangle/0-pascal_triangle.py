@@ -10,7 +10,7 @@ def pascal_triangle(n):
     for row_number in range(1, n):
         row = [1]
         for j in range(1, row_number):
-            element = pasc[row_number - 1][j - 1] + pas[row_number - 1][j]
+            element = pasc[row_number - 1][j - 1] + pasc[row_number - 1][j]
             row.append(element)
         row.append(1)
         pasc.append(row)
